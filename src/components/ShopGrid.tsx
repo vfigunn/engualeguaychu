@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import ShopCard from './ShopCard';
+import ShopDetailsModal from './ShopDetailsModal';
 import { Shop, Category } from '@/lib/data';
 
 interface ShopGridProps {
@@ -12,6 +13,8 @@ interface ShopGridProps {
 const ShopGrid: React.FC<ShopGridProps> = ({ shops, searchTerm, selectedCategory }) => {
   const [filteredShops, setFilteredShops] = useState<Shop[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedShop, setSelectedShop] = useState<Shop | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
@@ -39,6 +42,15 @@ const ShopGrid: React.FC<ShopGridProps> = ({ shops, searchTerm, selectedCategory
     return () => clearTimeout(timer);
   }, [shops, searchTerm, selectedCategory]);
 
+  const handleShopSelect = (shop: Shop) => {
+    setSelectedShop(shop);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   if (isLoading) {
     return (
       <div className="min-h-[300px] flex items-center justify-center">
@@ -59,11 +71,24 @@ const ShopGrid: React.FC<ShopGridProps> = ({ shops, searchTerm, selectedCategory
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {filteredShops.map((shop, index) => (
-        <ShopCard key={shop.id} shop={shop} index={index} />
-      ))}
-    </div>
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {filteredShops.map((shop, index) => (
+          <ShopCard 
+            key={shop.id} 
+            shop={shop} 
+            index={index} 
+            onSelect={handleShopSelect}
+          />
+        ))}
+      </div>
+
+      <ShopDetailsModal 
+        shop={selectedShop} 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal} 
+      />
+    </>
   );
 };
 

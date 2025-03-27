@@ -5,9 +5,10 @@ import { Shop } from '@/lib/data';
 interface ShopCardProps {
   shop: Shop;
   index: number;
+  onSelect: (shop: Shop) => void;
 }
 
-const ShopCard: React.FC<ShopCardProps> = ({ shop, index }) => {
+const ShopCard: React.FC<ShopCardProps> = ({ shop, index, onSelect }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
 
@@ -39,8 +40,9 @@ const ShopCard: React.FC<ShopCardProps> = ({ shop, index }) => {
 
   return (
     <div 
-      className={`glass-card rounded-2xl overflow-hidden transition-all duration-500 transform hover:translate-y-[-5px] hover:shadow-xl animation-delay-${index * 100} opacity-0 animate-fade-in`}
+      className={`glass-card rounded-2xl overflow-hidden transition-all duration-500 transform hover:translate-y-[-5px] hover:shadow-xl animation-delay-${index * 100} opacity-0 animate-fade-in cursor-pointer`}
       style={{ animationDelay: `${index * 50}ms` }}
+      onClick={() => onSelect(shop)}
     >
       <div className="relative pt-[60%] overflow-hidden bg-gray-100">
         {!isLoaded && (
