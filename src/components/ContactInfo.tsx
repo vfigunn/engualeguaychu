@@ -13,7 +13,7 @@ const ContactInfo: React.FC = () => {
           <h3 className="font-medium">Email</h3>
           <p className="text-muted-foreground">
             <a href="mailto:info@cityshophaven.com" className="hover:text-primary transition-colors">
-              engualeguaychu@gmail..com
+              engualeguaychu@gmail.com
             </a>
           </p>
         </div>
@@ -22,7 +22,7 @@ const ContactInfo: React.FC = () => {
       <div className="flex items-start">
         <Clock className="mr-4 text-primary" size={22} />
         <div>
-          <h3 className="font-medium">Hourario de atención</h3>
+          <h3 className="font-medium">Horario de atención</h3>
           <p className="text-muted-foreground">Lunes a Sábados: 9AM - 5PM</p>
         </div>
       </div>
