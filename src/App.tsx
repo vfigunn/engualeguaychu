@@ -11,6 +11,9 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 const basename = import.meta.env.BASE_URL || "/engualeguaychu/";
 
+// Get the base URL from the environment or default to '/' for local development
+const basename = import.meta.env.BASE_URL || "/engualeguaychu/";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>

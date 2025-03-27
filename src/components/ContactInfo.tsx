@@ -12,7 +12,11 @@ const ContactInfo: React.FC = () => {
         <div>
           <h3 className="font-medium">Email</h3>
           <p className="text-muted-foreground">
+<<<<<<< HEAD
             <a href="mailto:info@cityshophaven.com" className="hover:text-primary transition-colors">
+=======
+            <a href="mailto:engualeguaychu@gmail.com" className="hover:text-primary transition-colors">
+>>>>>>> 797bec6841e5946c5dfbd8595d16fc9bdff52045
               engualeguaychu@gmail.com
             </a>
           </p>
