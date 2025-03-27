@@ -35,7 +35,7 @@ const Navbar = () => {
             to="/"
             className="text-2xl font-medium transition-opacity duration-300 hover:opacity-80"
           >
-            City Shop Haven
+            ENGUALEGUAYCHU
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +46,7 @@ const Navbar = () => {
                 location.pathname === "/" ? "text-primary font-medium" : ""
               }`}
             >
-              Shops
+              Inicio
             </Link>
             <Link
               to="/contact"
@@ -54,7 +54,7 @@ const Navbar = () => {
                 location.pathname === "/contact" ? "text-primary font-medium" : ""
               }`}
             >
-              Contact
+              Contacto
             </Link>
           </div>
 

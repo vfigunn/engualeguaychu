@@ -11,41 +11,35 @@ const Footer: React.FC = () => {
       <div className="container px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-medium mb-4">City Shop Haven</h3>
+            <h3 className="text-xl font-medium mb-4">ENGUALEGUAYCHU</h3>
             <p className="text-muted-foreground">
-              Your guide to exploring the unique shops and businesses in our vibrant city.
+            Descubre, apoya y conecta con los comercios locales que hacen grande a Gualeguaychú.
             </p>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">Quick Links</h3>
+            <h3 className="text-lg font-medium mb-4">Páginas</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
-                  Shops
+                  Inicio
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                  Contacto
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">Contact Info</h3>
+            <h3 className="text-lg font-medium mb-4">Contacto</h3>
             <address className="not-italic text-muted-foreground">
-              <p>123 Main Street</p>
-              <p>City Center, ST 12345</p>
+
               <p className="mt-2">
                 <a href="mailto:info@cityshophaven.com" className="hover:text-primary transition-colors">
-                  info@cityshophaven.com
-                </a>
-              </p>
-              <p>
-                <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                  (123) 456-7890
+                  engualeguaychu@gmail.com
                 </a>
               </p>
             </address>
@@ -54,10 +48,10 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-border mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} City Shop Haven. All rights reserved.
+            © {currentYear} ENGUALEGUAYCHU. Todos los derechos reservados.
           </p>
           <p className="text-sm text-muted-foreground flex items-center mt-4 md:mt-0">
-            Made with <Heart size={14} className="mx-1 text-red-500" /> in our City
+            Creado con <Heart size={14} className="mx-1 text-red-500" /> <a href="https://github.com/vfigunn">por vfigun</a>
           </p>
         </div>
       </div>

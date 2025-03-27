@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Instagram } from 'lucide-react';
 import { Shop } from '@/lib/data';
 import {
   Dialog,
@@ -24,15 +24,15 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'restaurant':
+      case 'restaurantes':
         return 'bg-orange-100 text-orange-800';
-      case 'clothing':
+      case 'indumentaria':
         return 'bg-blue-100 text-blue-800';
-      case 'pharmacy':
+      case 'farmacia':
         return 'bg-green-100 text-green-800';
-      case 'grocery':
+      case 'optica':
         return 'bg-yellow-100 text-yellow-800';
-      case 'electronics':
+      case 'electrodomesticos':
         return 'bg-purple-100 text-purple-800';
       default:
         return 'bg-gray-100 text-gray-800';
@@ -54,7 +54,7 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
         <div className="grid gap-6 py-4">
           {/* Description */}
           <div>
-            <h3 className="font-medium mb-2">About</h3>
+            <h3 className="font-medium mb-2">Información</h3>
             <p className="text-sm text-muted-foreground">{shop.description}</p>
           </div>
           
@@ -62,7 +62,7 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
           <div>
             <h3 className="font-medium mb-2 flex items-center gap-2">
               <Clock className="h-4 w-4" />
-              <span>Opening Hours</span>
+              <span>Horarios:</span>
             </h3>
             <div className="space-y-1">
               {shop.openingHours.map((schedule, index) => (
@@ -76,12 +76,20 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
           
           {/* Contact Details */}
           <div>
-            <h3 className="font-medium mb-2">Contact Information</h3>
+            <h3 className="font-medium mb-2">Contacto:</h3>
             <div className="space-y-2">
+
               {shop.contact.phone && (
                 <div className="flex items-center gap-2 text-sm">
                   <Phone className="h-4 w-4 text-muted-foreground" />
                   <span>{shop.contact.phone}</span>
+                </div>
+              )}
+
+              {shop.contact.instagram && (
+                <div className="flex items-center gap-2 text-sm">
+                  <Instagram className="h-4 w-4 text-muted-foreground" />
+                  <span>{shop.contact.instagram}</span>
                 </div>
               )}
               

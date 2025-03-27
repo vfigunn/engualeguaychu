@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
     <form onSubmit={handleSubmit} className="space-y-6 reveal">
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-2">
-          Name
+          Nombre
         </label>
         <input
           id="name"
@@ -44,7 +44,7 @@ const ContactForm: React.FC = () => {
           value={formData.name}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg border border-border bg-background/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/50"
-          placeholder="Your name"
+          placeholder="Nombre"
         />
       </div>
 
@@ -60,13 +60,13 @@ const ContactForm: React.FC = () => {
           value={formData.email}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg border border-border bg-background/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/50"
-          placeholder="your.email@example.com"
+          placeholder="email@ejemplo.com"
         />
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium mb-2">
-          Message
+          Mensaje:
         </label>
         <textarea
           id="message"
@@ -76,7 +76,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           rows={5}
           className="w-full px-4 py-3 rounded-lg border border-border bg-background/50 transition-all focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-          placeholder="Your message"
+          placeholder="Escriba aquí..."
         ></textarea>
       </div>
 
@@ -88,11 +88,11 @@ const ContactForm: React.FC = () => {
         {isSubmitting ? (
           <>
             <div className="mr-2 h-4 w-4 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
-            Sending...
+            Enviando...
           </>
         ) : (
           <>
-            Send Message
+            Enviar mensaje
             <Send size={16} className="ml-2" />
           </>
         )}

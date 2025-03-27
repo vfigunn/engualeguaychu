@@ -36,9 +36,15 @@ const Contact: React.FC = () => {
       <Navbar />
       <main className="min-h-screen pt-32 px-6 container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16 reveal">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">¿Quienes somos?</h1><br></br>
           <p className="text-xl text-muted-foreground">
-            Have questions or want to add your shop to our directory? Get in touch with us.
+            Somos un equipo apasionado por nuestra ciudad y su crecimiento. Creemos que cada negocio, grande o pequeño, merece visibilidad y la oportunidad de conectar con más personas.
+          </p><br></br>
+          <p className="text-xl text-muted-foreground">
+            Por eso, creamos este espacio para reunir en un solo lugar toda la información sobre los comercios y emprendimientos locales
+          </p><br></br>
+          <p className="text-xl text-muted-foreground">
+          Nuestro objetivo es facilitar a los habitantes y visitantes el acceso a una guía completa de negocios, fomentando el comercio local y apoyando a los emprendedores de nuestra comunidad.
           </p>
         </div>
 
@@ -49,21 +55,21 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="reveal glass-card rounded-2xl p-8 shadow-lg">
-              <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-semibold mb-6">Escriba un mensaje</h2>
               <ContactForm />
             </div>
           </div>
 
           <div className="mt-20 reveal bg-secondary/30 rounded-2xl p-8">
-            <h2 className="text-2xl font-semibold mb-6">About City Shop Haven</h2>
+            <h2 className="text-2xl font-semibold mb-6">Contactanos</h2>
             <p className="text-muted-foreground mb-4">
-              City Shop Haven is a comprehensive directory of local businesses and shops in our city. Our mission is to connect residents and visitors with the diverse array of shops that make our community unique.
+            <b>Si tienes un negocio y quieres que forme parte de nuestro directorio, no dudes en contactarnos. Escríbenos y con gusto te ayudaremos a destacar en nuestra plataforma.</b>
             </p>
             <p className="text-muted-foreground mb-4">
-              Whether you're looking for a cozy café, a boutique clothing store, or a specialty pharmacy, our platform helps you discover and support local businesses.
+            *Si deseas que eliminemos tu negocio de nuestra página, por favor contáctanos.*
             </p>
-            <p className="text-muted-foreground">
-              We're constantly adding new shops and features to enhance your experience. If you own a local business and would like to be featured in our directory, please contact us using the form above.
+            <p className="text-muted-foreground mb-4">
+              📩 <b><a href="mailto:engualeguaychu@gmail.com">engualeguaychu@gmail.com</a></b>
             </p>
           </div>
         </div>

@@ -32,7 +32,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   return (
     <div 
-      className={`search-bar reveal mb-6 relative rounded-full transition-all duration-300 ${
+      className={`search-bar reveal mb-6 relative rounded-full transition-all duration-300 active ${
         isFocused ? 'shadow-md bg-white' : 'bg-secondary/80'
       }`}
     >
@@ -42,7 +42,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           type="text"
           value={searchTerm}
           onChange={handleChange}
-          placeholder="Search shops..."
+          placeholder="Buscar..."
           className="w-full px-3 py-2 bg-transparent focus:outline-none"
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
@@ -51,7 +51,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
           <button
             onClick={clearSearch}
             className="p-1 rounded-full hover:bg-secondary transition-colors"
-            aria-label="Clear search"
+            aria-label="Limpiar busqueda"
           >
             <X size={16} />
           </button>
