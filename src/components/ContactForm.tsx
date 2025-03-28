@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { toast } from 'sonner';
@@ -16,18 +15,30 @@ const ContactForm: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success('Menesaje enviado con éxito!', {
-        description: 'Nos pondremos en contacto con usted lo antes posible.',
+    try {
+      const response = await fetch('https://formspree.io/f/mzzeaekp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 1500);
+
+      if (response.ok) {
+        toast.success('Mensaje enviado con éxito!', {
+          description: 'Nos pondremos en contacto con usted lo antes posible.',
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast.error('Hubo un problema al enviar el mensaje. Inténtalo de nuevo.');
+      }
+    } catch (error) {
+      toast.error('Error de conexión. Inténtalo de nuevo.');
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
