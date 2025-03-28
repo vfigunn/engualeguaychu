@@ -17,7 +17,7 @@ export interface Shop {
   };
 }
 
-export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'all';
+export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'all';
 
 export const categories: { value: Category; label: string }[] = [
   { value: 'all', label: 'Todos' },
@@ -26,7 +26,9 @@ export const categories: { value: Category; label: string }[] = [
   { value: 'farmacia', label: 'Farmacias' },
   { value: 'optica', label: 'Opticas' },
   { value: 'electrodomesticos', label: 'Electrodomesticos' },
+  { value: 'automotores', label: 'Repuestos Automotor' },
   { value: 'educacion', label: 'Educacion' },
+  { value: 'comestibles', label: 'Despensas' },
 ];
 
 export const shops: Shop[] = [
@@ -127,6 +129,40 @@ export const shops: Shop[] = [
     phone: '+54 3446 238762',
     instagram: '@oncityok',
     address: '25 de Mayo 882, Gualeguaychu, Entre Rios, Argentina.'
+  }
+},
+  {
+  id: '7',
+  name: 'Centro Villa Baterias',
+  category: 'automotores',
+  logo: 'https://i.ibb.co/9Dp2D1c/baterias-villa.png',
+  description: '​Centro Villa Baterías es un comercio especializado en la venta y servicio de baterías para vehículos.',
+  openingHours: [
+    { days: 'Lunes a Viernes', hours: '08:30 AM - 12:00 PM' },
+    { days: '', hours: '16:00 PM - 20:00 PM' },
+    { days: 'Sábados', hours: '08:30 AM - 12:00 PM' },
+  ],
+  contact: {
+    phone: '+549 3446 588222 o +549 3446 403713',
+    email: 'romanieugenio@gmail.com',
+    address: 'Colombo 912, Gualeguaychu, Entre Rios, Argentina.'
+  }
+},
+  {
+  id: '8',
+  name: 'Polleria La Favorita',
+  category: 'comestibles',
+  logo: 'https://i.ibb.co/2168Q7zK/lafavo.jpg',
+  description: 'Pollería La Favorita ofrece carnes frescas y de calidad, milanesas y demás productos.',
+  openingHours: [
+    { days: 'Lunes a Sábados', hours: '08:00 AM - 13:00 PM' },
+    { days: '', hours: '16:30 PM - 21:00 PM' },
+    { days: 'Domingos', hours: '09:00 AM - 13:00 PM' },
+  ],
+  contact: {
+    phone: '+549 3446 648945',
+    instagram: '@polleria_lafavorita',
+    address: 'Gral. Artigas 1741, Gualeguaychu, Entre Rios, Argentina.'
   }
 },
 ];

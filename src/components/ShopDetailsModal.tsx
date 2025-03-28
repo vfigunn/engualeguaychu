@@ -34,6 +34,12 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
         return 'bg-yellow-100 text-yellow-800';
       case 'electrodomesticos':
         return 'bg-purple-100 text-purple-800';
+      case 'educacion':
+        return 'bg-red-100 text-red-800';
+      case 'automotores':
+        return 'bg-sky-100 text-sky-800';
+      case 'comestibles':
+        return 'bg-lime-100 text-lime-800';
       default:
         return 'bg-gray-100 text-gray-800';
     }
