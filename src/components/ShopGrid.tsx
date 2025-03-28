@@ -63,8 +63,8 @@ const ShopGrid: React.FC<ShopGridProps> = ({ shops, searchTerm, selectedCategory
     return (
       <div className="min-h-[300px] flex items-center justify-center">
         <div className="text-center">
-          <h3 className="text-xl font-medium mb-2">No shops found</h3>
-          <p className="text-muted-foreground">Try adjusting your search or filter criteria</p>
+          <h3 className="text-xl font-medium mb-2">No hubo resultados.</h3>
+          <p className="text-muted-foreground">Intenta otra búsqueda o filtro.</p>
         </div>
       </div>
     );
