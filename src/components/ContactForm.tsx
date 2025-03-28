@@ -22,8 +22,8 @@ const ContactForm: React.FC = () => {
 
     // Simulate form submission
     setTimeout(() => {
-      toast.success('Message sent successfully!', {
-        description: 'We will get back to you as soon as possible.',
+      toast.success('Menesaje enviado con éxito!', {
+        description: 'Nos pondremos en contacto con usted lo antes posible.',
       });
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);

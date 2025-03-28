@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             <address className="not-italic text-muted-foreground">
 
               <p className="mt-2">
-                <a href="mailto:info@cityshophaven.com" className="hover:text-primary transition-colors">
+                <a href="mailto:engualeguaychu@gmail.com" className="hover:text-primary transition-colors">
                   engualeguaychu@gmail.com
                 </a>
               </p>
