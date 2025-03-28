@@ -50,7 +50,7 @@ export const shops: Shop[] = [
     id: '2',
     name: 'Maldita Birra',
     category: 'restaurantes',
-    logo: 'https://i.ibb.co/m5v3sD2k/maldita-birra.jpg',
+    logo: 'https://i.ibb.co/zVDsNRgw/maldita-birra.jpg',
     description: 'Maldita Birra es un bar que ofrece cervezas artesanales, tragos y distintos tipos de comida.',
     openingHours: [
       { days: 'Lunes, Jueves y Domingos', hours: '19:00 PM - 01:00 AM' },
@@ -58,7 +58,6 @@ export const shops: Shop[] = [
     ],
     contact: {
       phone: '+54 3446 56-5361',
- //     email: 'opticafigun@gmail.com',
       instagram: '@malditagchu',
       address: 'San Lorenzo & Urquiza, Gualeguaychu, Entre Rios, Argentina.'
     }

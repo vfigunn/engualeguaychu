@@ -50,7 +50,7 @@ const Index: React.FC = () => {
       <main className="min-h-screen pt-32 px-6 container mx-auto">      
         <div className="max-w-3xl mx-auto text-center mb-12 reveal">
           <div className="w-full max-w-10/10 mx-auto text-center mb-12 reveal flex-row">
-            <img src="./src/lib/images/engualeguaychu-logo.png" alt="" className='mx-auto h-20 rounded-md' />
+            <img src='https://i.ibb.co/CpYDmjkM/Captura-de-pantalla-2025-03-26-221024.png' alt="" className='mx-auto h-20 rounded-md' />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">EN GUALEGUAYCHÚ</h1>
           </div>
           <p className="text-xl text-muted-foreground">
