@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Clock, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Instagram, Webhook } from 'lucide-react';
 import { Shop } from '@/lib/data';
 import {
   Dialog,
@@ -40,6 +40,8 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
         return 'bg-sky-100 text-sky-800';
       case 'comestibles':
         return 'bg-lime-100 text-lime-800';
+      case 'servicios':
+        return 'bg-amber-100 text-amber-800';
       default:
         return 'bg-gray-100 text-gray-800';
     }
@@ -89,6 +91,13 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
                 <div className="flex items-center gap-2 text-sm">
                   <Phone className="h-4 w-4 text-muted-foreground" />
                   <span>{shop.contact.phone}</span>
+                </div>
+              )}
+
+              {shop.contact.web && (
+                <div className="flex items-center gap-2 text-sm">
+                  <Webhook className="h-4 w-4 text-muted-foreground" />
+                  <span>{shop.contact.web}</span>
                 </div>
               )}
 

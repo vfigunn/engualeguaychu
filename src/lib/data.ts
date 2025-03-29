@@ -14,10 +14,11 @@ export interface Shop {
     email?: string;
     address?: string;
     instagram?: string;
+    web?: string;
   };
 }
 
-export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'all';
+export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'servicios' | 'all';
 
 export const categories: { value: Category; label: string }[] = [
   { value: 'all', label: 'Todos' },
@@ -29,6 +30,7 @@ export const categories: { value: Category; label: string }[] = [
   { value: 'automotores', label: 'Repuestos Automotor' },
   { value: 'educacion', label: 'Educacion' },
   { value: 'comestibles', label: 'Despensas' },
+  { value: 'servicios', label: 'Servicios' },
 ];
 
 export const shops: Shop[] = [
@@ -40,7 +42,7 @@ export const shops: Shop[] = [
     description: 'Optica Figun ofrece lentes de receta, de sol y de contacto con asesoramiento profesional.',
     openingHours: [
       { days: 'Lunes a Viernes', hours: '9:00 AM - 12:00 PM' },
-      { days: '', hours: '17:00 AM - 19:00 PM' }
+      { days: '', hours: '17:00 PM - 19:00 PM' }
     ],
     contact: {
       phone: '+54 3446 658195',
@@ -163,6 +165,38 @@ export const shops: Shop[] = [
     phone: '+549 3446 648945',
     instagram: '@polleria_lafavorita',
     address: 'Gral. Artigas 1741, Gualeguaychu, Entre Rios, Argentina.'
+  }
+},
+  {
+  id: '9',
+  name: 'EntreRios.Net',
+  category: 'servicios',
+  logo: 'https://i.ibb.co/Y7SzH19t/logo-transparent.png',
+  description: 'Tu proveedor de internet local, comprometidos en brindarte la mejor conexión y experiencia digital en la región.',
+  openingHours: [
+    { days: 'Lunes a Viernes', hours: '08:00 AM - 12:30 PM' },
+    { days: '', hours: '16:00 PM - 20:00 PM' },
+    { days: 'Sábados', hours: '08:30 AM - 13:00 PM' },
+  ],
+  contact: {
+    phone: '+549 3446 426555',
+    web: 'https://web.entrerios.net/',
+    address: 'Andrade 784, Gualeguaychu, Entre Rios, Argentina.'
+  }
+},
+  {
+  id: '10',
+  name: 'Instituto Sedes Sapientiae',
+  category: 'educacion',
+  logo: 'https://i.ibb.co/bjqqPXRT/sedes-logo.jpg',
+  description: '​El Instituto Sedes Sapientiae ofrece formación terciaria,profesorados y carreras de grado.',
+  openingHours: [
+    { days: 'Lunes a Viernes', hours: '16:00 PM - 22:00 PM' },
+  ],
+  contact: {
+    phone: '+549 3446 426865',
+    web: 'https://www.sedessapientiae.edu.ar/',
+    address: 'Santa Fe 74, Gualeguaychu, Entre Rios, Argentina.'
   }
 },
 ];

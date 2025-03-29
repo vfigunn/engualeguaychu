@@ -30,6 +30,8 @@ const ShopCard: React.FC<ShopCardProps> = ({ shop, index, onSelect }) => {
         return 'bg-sky-100 text-sky-800';
       case 'comestibles':
         return 'bg-lime-100 text-lime-800';
+      case 'servicios':
+        return 'bg-amber-100 text-amber-800';
       default:
         return 'bg-gray-100 text-gray-800';
     }
@@ -60,7 +62,7 @@ const ShopCard: React.FC<ShopCardProps> = ({ shop, index, onSelect }) => {
           <img
             src={shop.logo}
             alt={`${shop.name} logo`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
             onLoad={handleImageLoad}
             onError={handleImageError}
           />
