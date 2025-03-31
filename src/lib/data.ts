@@ -18,7 +18,7 @@ export interface Shop {
   };
 }
 
-export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'servicios' | 'all';
+export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'servicios' | 'gimnasios' | 'all';
 
 export const categories: { value: Category; label: string }[] = [
   { value: 'all', label: 'Todos' },
@@ -31,6 +31,7 @@ export const categories: { value: Category; label: string }[] = [
   { value: 'educacion', label: 'Educacion' },
   { value: 'comestibles', label: 'Despensas' },
   { value: 'servicios', label: 'Servicios' },
+  { value: 'gimnasios', label: 'Gimnasios' },
 ];
 
 export const shops: Shop[] = [
@@ -198,5 +199,21 @@ export const shops: Shop[] = [
     web: 'https://www.sedessapientiae.edu.ar/',
     address: 'Santa Fe 74, Gualeguaychu, Entre Rios, Argentina.'
   }
-},
+  },
+  {
+  id: '11',
+  name: 'Mega Gym',
+  category: 'gimnasios',
+  logo: 'https://i.ibb.co/k6rrkwbS/megynm.jpg',
+  description: 'Mega Gym es un gimnasio que ofrece sala de musculación, HIIT y CrossFit.',
+  openingHours: [
+    { days: 'Lunes a Viernes', hours: '06:00 AM - 23:00 PM' },
+    { days: 'Sábados', hours: '08:00 AM - 15:00 PM' },
+  ],
+  contact: {
+    phone: '+549 3446 670344',
+    instagram: '@megagymgchu',
+    address: 'Clavarino 876, Gualeguaychu, Entre Rios, Argentina.'
+  }
+  },
 ];

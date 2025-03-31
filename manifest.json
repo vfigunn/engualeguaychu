@@ -1,0 +1,21 @@
+{
+    "name": "EnGualeguaychú",
+    "short_name": "EnGualeguaychú",
+    "description": "Recopilación de comercios en Gualeguaychú",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+    {
+        "src": "./public/favicon.ico",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "./public/favicon.ico",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+    ]
+}

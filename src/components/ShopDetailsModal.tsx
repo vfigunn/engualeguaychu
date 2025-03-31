@@ -42,6 +42,8 @@ const ShopDetailsModal: React.FC<ShopDetailsModalProps> = ({
         return 'bg-lime-100 text-lime-800';
       case 'servicios':
         return 'bg-amber-100 text-amber-800';
+      case 'gimnasios':
+        return 'bg-orange-300 text-amber-800';
       default:
         return 'bg-gray-100 text-gray-800';
     }

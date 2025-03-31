@@ -30,9 +30,11 @@ const ShopCard: React.FC<ShopCardProps> = ({ shop, index, onSelect }) => {
         return 'bg-sky-100 text-sky-800';
       case 'comestibles':
         return 'bg-lime-100 text-lime-800';
-      case 'servicios':
-        return 'bg-amber-100 text-amber-800';
-      default:
+        case 'servicios':
+          return 'bg-amber-100 text-amber-800';
+        case 'gimnasios':
+          return 'bg-orange-300 text-amber-800';
+        default:
         return 'bg-gray-100 text-gray-800';
     }
   };
