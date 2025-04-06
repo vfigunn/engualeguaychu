@@ -138,7 +138,7 @@ export const shops: Shop[] = [
   id: '7',
   name: 'Centro Villa Baterias',
   category: 'automotores',
-  logo: 'https://i.ibb.co/9Dp2D1c/baterias-villa.png',
+  logo: 'https://i.ibb.co/j9pjsQWf/baterias-villa.png',
   description: '​Centro Villa Baterías es un comercio especializado en la venta y servicio de baterías para vehículos.',
   openingHours: [
     { days: 'Lunes a Viernes', hours: '08:30 AM - 12:00 PM' },
@@ -155,7 +155,7 @@ export const shops: Shop[] = [
   id: '8',
   name: 'Polleria La Favorita',
   category: 'comestibles',
-  logo: 'https://i.ibb.co/2168Q7zK/lafavo.jpg',
+  logo: 'https://i.ibb.co/5W6nLQw2/lafavo.jpg',
   description: 'Pollería La Favorita ofrece carnes frescas y de calidad, milanesas y demás productos.',
   openingHours: [
     { days: 'Lunes a Sábados', hours: '08:00 AM - 13:00 PM' },
@@ -172,7 +172,7 @@ export const shops: Shop[] = [
   id: '9',
   name: 'EntreRios.Net',
   category: 'servicios',
-  logo: 'https://i.ibb.co/Y7SzH19t/logo-transparent.png',
+  logo: 'https://i.ibb.co/LDfLfJyP/logo-transparent.png',
   description: 'Tu proveedor de internet local, comprometidos en brindarte la mejor conexión y experiencia digital en la región.',
   openingHours: [
     { days: 'Lunes a Viernes', hours: '08:00 AM - 12:30 PM' },
@@ -189,7 +189,7 @@ export const shops: Shop[] = [
   id: '10',
   name: 'Instituto Sedes Sapientiae',
   category: 'educacion',
-  logo: 'https://i.ibb.co/bjqqPXRT/sedes-logo.jpg',
+  logo: 'https://i.ibb.co/SDFtNbjR/sedes-logo.jpg',
   description: '​El Instituto Sedes Sapientiae ofrece formación terciaria,profesorados y carreras de grado.',
   openingHours: [
     { days: 'Lunes a Viernes', hours: '16:00 PM - 22:00 PM' },
@@ -204,7 +204,7 @@ export const shops: Shop[] = [
   id: '11',
   name: 'Mega Gym',
   category: 'gimnasios',
-  logo: 'https://i.ibb.co/k6rrkwbS/megynm.jpg',
+  logo: 'https://i.ibb.co/sp9mrqRp/megynm.jpg',
   description: 'Mega Gym es un gimnasio que ofrece sala de musculación, HIIT y CrossFit.',
   openingHours: [
     { days: 'Lunes a Viernes', hours: '06:00 AM - 23:00 PM' },
