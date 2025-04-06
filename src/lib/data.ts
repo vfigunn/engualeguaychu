@@ -18,7 +18,7 @@ export interface Shop {
   };
 }
 
-export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'servicios' | 'gimnasios' | 'all';
+export type Category = 'restaurantes' | 'indumentaria' | 'farmacia' | 'hogar' | 'optica' | 'electrodomesticos' | 'educacion' | 'automotores' | 'comestibles' | 'servicios' | 'gimnasios' | 'peluquerias' | 'all';
 
 export const categories: { value: Category; label: string }[] = [
   { value: 'all', label: 'Todos' },
@@ -32,6 +32,8 @@ export const categories: { value: Category; label: string }[] = [
   { value: 'comestibles', label: 'Despensas' },
   { value: 'servicios', label: 'Servicios' },
   { value: 'gimnasios', label: 'Gimnasios' },
+  { value: 'peluquerias', label: 'Peluquerias' },
+  { value: 'hogar', label: 'Hogar' },
 ];
 
 export const shops: Shop[] = [
@@ -59,7 +61,7 @@ export const shops: Shop[] = [
     logo: 'https://i.ibb.co/zVDsNRgw/maldita-birra.jpg',
     description: 'Maldita Birra es un bar que ofrece cervezas artesanales, tragos y distintos tipos de comida.',
     openingHours: [
-      { days: 'Lunes, Jueves y Domingos', hours: '19:00 PM - 01:00 AM' },
+      { days: 'Miercoles, Jueves y Domingos', hours: '19:00 PM - 01:00 AM' },
       { days: 'Viernes y Sábados', hours: '19:00 PM - 03:00 AM' }
     ],
     contact: {
@@ -216,4 +218,49 @@ export const shops: Shop[] = [
     address: 'Clavarino 876, Gualeguaychu, Entre Rios, Argentina.'
   }
   },
+  {
+  id: '12',
+  name: 'Codigo Fitness',
+  category: 'gimnasios',
+  logo: 'https://i.ibb.co/RpBTTtrs/20589800-229084197615138-4750059024207052800-a.jpg"',
+  description: 'Acondicionamiento físico, cuidado de la salud y bienestar integral.',
+  openingHours: [
+    { days: 'Lunes a Viernes', hours: '08:00 AM - 20:30 PM' },
+  ],
+  contact: {
+    phone: '+549 3446 699433',
+    instagram: '@codigofitnessgym',
+    address: 'Alem 84, Gualeguaychu, Entre Rios, Argentina.'
+  }
+  },
+  {
+  id: '13',
+  name: 'Paola Salvatori',
+  category: 'peluquerias',
+  logo: 'https://i.ibb.co/Mk3zBF60/99558172-615186622418834-7573788107640668160-n.jpg',
+  description: '​Peluquería Paola Salvatori es un salón de belleza que orfrece servicios de peluquería, cuidado capilar y estilismo. ',
+  openingHours: [
+    { days: 'Martes a Sábados', hours: '' },
+  ],
+  contact: {
+    phone: '+549 3446 362686',
+    instagram: '@paolalorenasalvatori',
+  }
+  },
+  {
+  id: '14',
+  name: 'La Cala',
+  category: 'hogar',
+  logo: 'https://i.ibb.co/fV3wLVLW/436547352-327649756635749-2045489532418797098-n.jpg',
+  description: '​La Cala Textiles Intervenidos es un emprendimiento de Gualeguaychú que ofrece textiles artesanales y sostenibles para el hogar, combinando arte y confort. ​',
+  openingHours: [
+    { days: 'Consultar', hours: '' },
+  ],
+  contact: {
+    phone: '+549 11 35207459',
+    web: 'https://www.lacalatextiles.ar/',
+    instagram: '@lacala_textilesintervenidos',
+  }
+  },
 ];
+

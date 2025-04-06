@@ -34,6 +34,10 @@ const ShopCard: React.FC<ShopCardProps> = ({ shop, index, onSelect }) => {
           return 'bg-amber-100 text-amber-800';
         case 'gimnasios':
           return 'bg-orange-300 text-amber-800';
+        case 'peluquerias':
+          return 'bg-fuchsia-300 text-fuchsia-800';  
+        case 'hogar':
+          return 'bg-slate-300 text-slate-800';  
         default:
         return 'bg-gray-100 text-gray-800';
     }
